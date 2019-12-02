@@ -1,8 +1,8 @@
-require('dotenv').config()
+
 
 const database = require("mongoose");
 
-database.connect("mongodb+srv://iservices:iservices@cluster0-uvhbh.mongodb.net/testE?retryWrites=true&w=majority", {
+database.connect(process.env.DB_NAME, {
   useNewUrlParser: true,
   useFindAndModify: true
 });

@@ -1,3 +1,3 @@
 module.exports = {
-  key: "TESTE"
+  key: process.env.APPKEY
 };
